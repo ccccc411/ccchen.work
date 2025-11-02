@@ -1,0 +1,74 @@
+canvas {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+}
+.menu {
+  display: flex;
+  position: fixed;
+  left: 20px;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 10010;
+}
+.overlay-menu {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.92);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+.overlay-menu.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.menu-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 44px;
+  height: 44px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+.menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: grid;
+  gap: 24px;
+  font-family: Inter;
+  font-weight: 300;
+  font-size: clamp(24px, 5vw, 64px);
+}
+.menu-list a {
+  color: #fff;
+  text-decoration: none;
+}
+.menu-list a:hover {
+  text-decoration: underline;
+}
+.loading {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 1;
+  color: #00b33c;
+  font-family: Inter;
+  font-size: 12px;
+}
