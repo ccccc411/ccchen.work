@@ -64,12 +64,10 @@
       document.addEventListener("keydown", (e) => {
         if (e.key === "Escape" && menu.classList.contains("open")) closeMenu();
       });
-      menu.addEventListener("click", (e) => {
-        if (e.target === menu) closeMenu();
-      });
       document.addEventListener("click", (e) => {
         if (e.target.matches(".menu-close")) closeMenu();
       });
     </script>
   </body>
 </html>
+
