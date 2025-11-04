@@ -37,7 +37,7 @@ function setup() {
   imgElement7.size(290, 240);
   imgElement8 = createImg("homepageimage/line1.png", "line");
   imgElement8.position(725, 375);
-  imgElement8.size(50, 250);
+  imgElement8.size(40, 200);
 }
 function draw() {
   const angleDeg = (second() % 60) * 6;
@@ -50,3 +50,4 @@ function draw() {
   imgElement7.position(250, 100 + sin(frameCount / 50) * 10);
   imgElement8.style("transform", `rotate(${angleDeg}deg)`);
 }
+
